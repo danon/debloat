@@ -1,0 +1,11 @@
+;By default Win+V opens annoying popup "Enable clipboard history". To disable:
+
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced /v DisabledHotkeys /t REG_SZ /d V
+
+;then restart Explorer
+
+
+; remove "print" from context menu
+
+reg delete HKCR\txtfile\shell\print /F
+reg delete HKCR\txtfile\shell\printto /F

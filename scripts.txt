@@ -1,0 +1,17 @@
+Get-AppxPackage *Microsoft.* | Select-Object Name
+
+
+Get-AppxPackage *Microsoft.People -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.GetHelp -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxGamingOverlay -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxGameOverlay -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxSpeechToTextOverlay -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.XboxIdentityProvider -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Xbox.TCUI -AllUsers | Remove-AppxPackage
+
+
+Get-AppxPackage *Microsoft.YourPhone -AllUsers | Remove-AppxPackage
+Get-AppxPackage *Microsoft.Wallet -AllUsers | Remove-AppxPackage
+
+
+Get-AppxPackage Microsoft.Getstarted | Remove-AppxPackage
